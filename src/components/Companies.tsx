@@ -1,3 +1,5 @@
+'use client';
+
 import { Box, Container, styled, Typography } from '@mui/material';
 import Image from 'next/image';
 
@@ -27,7 +29,7 @@ const Companies = () => {
     <Box sx={{ mt: 10 }}>
       <CustomContainer>
         <CustomBox>
-          <Image src={LogoImg} alt="logo" style={{ maxWidth: '100%' }} />
+          <Image src={LogoImg} alt="logo" width={100} height={100} />
           <Typography
             variant="body2"
             sx={{
@@ -41,7 +43,7 @@ const Companies = () => {
           </Typography>
         </CustomBox>
         <Box>
-          <Image src={StarsImg} alt="stars" style={{ maxWidth: '100%' }} />
+          <Image src={StarsImg} alt="stars" width={100} height={100} />
           <Typography
             variant="body2"
             sx={{

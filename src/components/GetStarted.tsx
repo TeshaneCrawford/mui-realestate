@@ -1,3 +1,4 @@
+'use client';
 import { Button, styled, Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import Image from 'next/image';
@@ -50,7 +51,7 @@ const GetStarted = () => {
           />
         </Box>
 
-        <Image src={homeIllustration} alt="illustration" style={{ maxWidth: '100%' }} />
+        <Image src={homeIllustration} alt="illustration" width={100} height={100} />
       </CustomContainer>
     </CustomBox>
   );

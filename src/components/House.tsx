@@ -1,3 +1,4 @@
+'use client';
 import { Box, styled, Typography } from '@mui/material';
 import Image from 'next/image';
 import bedroomsIcon from '../../public/bedroomsIcon.png';
@@ -36,7 +37,7 @@ const House = ({ img, price, address, bedrooms, bathrooms, space }: {
   return (
     <HouseBox>
       <ImgContainer>
-        <Image src={img} alt="housePhoto" style={{ maxWidth: '100%' }} />
+        <Image src={img} alt="housePhoto" width={100} height={100} />
       </ImgContainer>
 
       <Box sx={{ padding: '1rem' }}>

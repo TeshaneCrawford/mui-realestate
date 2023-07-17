@@ -1,3 +1,4 @@
+'use client';
 import { styled, Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import Image from 'next/image';
@@ -126,9 +127,9 @@ const Footer = () => {
               You’ll find your next home, in any style you prefer.
             </Typography>
             <IconBox>
-                <Image src={fbIcon} alt="Facebook Icon" style={{ cursor: "pointer" }} />
-                <Image src={TwitterIcon} alt="Twitter Icon" style={{ cursor: "pointer" }} />
-                <Image src={LinkedInIcon} alt="LinkedIn Icon" style={{ cursor: "pointer" }} />
+              <Image src={fbIcon} alt="Facebook Icon" />
+              <Image src={TwitterIcon} alt="Twitter Icon" />
+              <Image src={LinkedInIcon} alt="LinkedIn Icon" />
             </IconBox>
           </Box>
         </CustomContainer>
